@@ -30,7 +30,7 @@ public class MainClass {
 		Square sqr= new Square();
 		System.out.println("---Doing Something");
 		doSomething(newShape);///this shows exception cz Shape is parent class of Shape2D;
-        doSomething(sqr);///this will declare that Square is inherited from class Shape2D;
+                doSomething(sqr);///this will declare that Square is inherited from class Shape2D;
 
 	}
 

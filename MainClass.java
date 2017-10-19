@@ -17,7 +17,7 @@ public class MainClass {
 		}
 	}
 	
-	void func(Shape ... s) {
+	static void func(Shape ... s) {
 		System.out.println("Calling function");
 		for(Shape newshape : s) {
 			doSomething(newshape);
@@ -31,7 +31,7 @@ public class MainClass {
 		System.out.println("---Doing Something");
 		doSomething(newShape);///this shows exception cz Shape is parent class of Shape2D;
                 doSomething(sqr);///this will declare that Square is inherited from class Shape2D;
-
+                func(newShape,sqr);
 	}
 
 }
